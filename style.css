@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    padding: 0;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#container {
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+.nav {
+    background-color: white;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__title {
+    font-size: 30px;
+}
+
+.nav__menu-item {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #777777;
+    transition: 0.5s;
+}
+
+.nav__menu-item:hover {
+    color: #444444;
+    transition: 0.5s;
+}
+    
+.underline-title {
+    background: -moz-linear-gradient(right, #9fffcb, #25a18e);
+    background: -webkit-linear-gradient(right, #9fffcb, #25a18e);
+    background: -o-linear-gradient(right, #9fffcb, #25a18e);
+    background: linear-gradient(right, #9fffcb, #25a18e);
+    height: 2px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    border-top: 2px solid gainsboro;
+    padding-left: 50px;
+}
+
+.footer__text {
+    font-size: 14px;
+}
+
+#search-box {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 10px 3%;
+}
+
+#search-form {
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#search-text {
+    font-size: 14px;
+    color: #ddd; 
+    border-width: 0;
+    background: transparent;
+}
+
+#search-box input[type="text"] {
+    padding: 11px 0 12px 1em; 
+    color: #333; 
+    outline: none;
+}
+
+#search-button {
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 70px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 42px;
+    border-width: 0;
+    background-color: #00a5cf;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.badan {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+ 
+.badan h2 {
+    color: #00a5cf;
+    border-bottom: 1px solid gainsboro;
+    margin: 5px;
+    margin-bottom: 13px;
+}
+
+
+.list-produk {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+ 
+.list-produk:hover {
+    transition-duration: 700ms;
+    box-shadow: 5px 5px gainsboro;
+}
+ 
+.list-produk img {
+    width: 100%;
+    height: 175px;
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+.list-produk h4, .list-produk h5 {
+    color: crimson;
+    text-align: center;
+    margin-bottom: 5px;
+}
+ 
+.tombol {
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    display: block;
+    float: left;
+    width: 45%;
+    margin: 4px;
+    text-align: center;
+    color: white;
+}
+
+.tombol-detail {
+    background-color: #8AC926;
+}
+
+.tombol-detail:hover {
+    background-color: green;
+    transition-duration: 700ms;
+}
+
+.tombol-beli {
+    background-color: #F433AB;
+}
+
+.tombol-beli:hover {
+    background-color: #CB04A5;
+}
+
+.item-detail {
+    padding: 20px 30px;
+    height: 100%;
+    display: flex;
+}
+
+.detail-img {
+    width: 400px;
+    height: 400px;
+}
+
+.detail-img img {
+    width: 400px;
+    height: 400px;
+}
+
+.detail-desc {
+    margin-right: 60px;
+    margin-left: 20px;
+    width: 70%;
+}
+  
+.detail-desc p {
+    display: block;
+    font-size: 16px;
+    color: black;
+    line-height: 150%;
+}
+  
+.item {
+    padding: 20px 30px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+    position: relative;
+    padding: 20px;
+    margin-right: 0 auto;
+    width: 10%;
+}
+  
+.delete-btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 17px;
+    background: url("delete-icn.svg") no-repeat center;
+    margin-right: 20px;
+}
+  
+.image {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.description {
+    padding: 10px;
+    margin-right: 60px;
+    margin-left: 50px;
+    width: 30%;
+}
+  
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: bold;
+}
+  
+.quantity {
+    padding: 10px;
+    margin-right: 60px;
+    width: 20%;
+}
+  
+.quantity span {
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    text-align: center;
+    background-color: #E1E8EE;
+    border: none;
+    cursor: pointer;
+}
+
+  
+.minus-btn img {
+    margin-bottom: 3px;
+}
+  
+.plus-btn img {
+    margin-top: 2px;
+}
+  
+button:focus, input:focus {
+    outline:0;
+}
+  
+.subtotal-price {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.total-price {
+    width: 100%;
+    padding: 10px 5%;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid black;
+}
+
+.checkout-btn {
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 10px;
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 4px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+#card-login {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 440px;
+    width: 329px;
+    /* margin: auto; */
+    margin: 6rem auto 7.1rem auto
+}
+
+#card-register {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 460px;
+    width: 329px;
+    /* margin: auto; */
+    margin: 6rem auto 6.1rem auto
+}
+
+#card-content {
+    padding: 12px 44px;
+}
+
+#card-title {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.underline-title-login {
+    background: -webkit-linear-gradient(right, #9fffcb, #25a18e);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 89px;
+}
+
+.underline-title-signup {
+    background: -webkit-linear-gradient(right, #9fffcb, #25a18e);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 149px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+}
+
+.form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-border {
+    background: -webkit-linear-gradient(right, #9fffcb, #25a18e);
+    height: 1px;
+    width: 100%;
+}
+
+.form-content {
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+#ask {
+    color: #2dbd6e;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#submit-btn {
+    background: -webkit-linear-gradient(right, #9fffcb, #25a18e);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px #25a18e;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+}
+
+#submit-btn:hover {
+    box-shadow: 0px 1px 18px #25a18e;
+}
+
+legend {
+    color: #25a18e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+fieldset {
+    max-width: 100%;
+    border-radius: 10px;
+    border-color: #4fffa5;
+    margin: 5px;
+}
+
+.label {
+    float: left;
+    font-size: 18px;
+    color: black;
+}
+
+.input-checkout {
+    border: 1px solid #25a18e;
+    border-radius: 3px;
+    height: 35px;
+    width: 100%;
+    padding: 7px;
+    margin: 5px;
+}
+
+textarea {
+    border: 1px solid #25a18e;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    margin: 5px;
+    height: 100px;
+    resize: none;
+}
+
+.total-checkout {
+    width: 100%;
+    padding: 10px 5%;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #25a18e;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background: #ff5f5f;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+button:hover {
+    background: #ff2e2e;
+}
